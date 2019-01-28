@@ -8,7 +8,7 @@ class MP3Importer
   end
   
   def files
-    Dir.entries(path).filter { |file| file != "." && file != ".." }
+    Dir.entries(path).select { |file| file != "." && file != ".." }
   end
   
   def import
