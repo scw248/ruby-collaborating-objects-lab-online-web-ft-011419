@@ -10,13 +10,14 @@ attr_accessor :name, :artist
   end
   
   def artist(artist_name)
-    Artist.all
+    Artist.all.find { |artist| artist == artist_name }
   end
   
   def self.new_by_filename(file_name)
     song = self.new(file_name)
     song.name = file_name.split(" - ")[1]
-    artist_name = 
+    artist_name = file_name.split(" - ")[0]
+    song.artist = artist(artist_name)
     song
   end
   
