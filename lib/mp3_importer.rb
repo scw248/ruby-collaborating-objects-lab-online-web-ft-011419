@@ -9,6 +9,7 @@ class MP3Importer
   
   def files
     Dir.entries(path).select { |file| file != "." && file != ".." }
+    binding.pry
   end
   
   def import
