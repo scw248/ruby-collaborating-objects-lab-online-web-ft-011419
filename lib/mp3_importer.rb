@@ -9,7 +9,7 @@ class MP3Importer
   
   def files
     binding.pry
-    Dir.glob(path) { |file| file.gsub(/[.mp3]/, '') }
+    Dir.glob(path)
     #binding.pry
   end
   
