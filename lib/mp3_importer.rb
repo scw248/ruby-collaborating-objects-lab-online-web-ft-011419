@@ -8,7 +8,7 @@ class MP3Importer
   end
   
   def files
-    Dir.glob(path) { |file| file.gsub(/[.mp3]/) }
+    Dir.glob(path) { |file| file.gsub(/[.mp3]/, '') }
     binding.pry
   end
   
