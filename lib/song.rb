@@ -9,8 +9,8 @@ attr_accessor :name, :artist
     @@all << self
   end
   
-  # def artist(artist_name)
-  #   Artist.all.find { |artist| artist == artist_name }
+  #def artist(artist_name)
+    #Artist.all.find { |artist| artist == artist_name }
   # end
   
   def self.new_by_filename(file_name)
